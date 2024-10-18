@@ -9,7 +9,7 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 .container {
   position: relative;
@@ -47,9 +47,7 @@ body {
   gap: 2rem;
 }
 
-.card-basic,
-.card-proffesional,
-.card-custom {
+.card {
   position: relative;
   min-width: 16rem;
   padding: 1rem 1.5rem;
@@ -293,9 +291,7 @@ hr {
     justify-content: center;
   }
 
-  .card-basic,
-  .card-proffesional,
-  .card-custom {
+  .card {
     width: 80%;
   }
 
@@ -328,9 +324,7 @@ hr {
     align-items: center;
   }
 
-  .card-basic,
-  .card-proffesional,
-  .card-custom {
+  .card {
     width: 100%;
   }
 

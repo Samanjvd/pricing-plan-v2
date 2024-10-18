@@ -7,29 +7,75 @@ import { useState } from "react";
 function App() {
   const [planType, setPlanType] = useState("monthly");
 
-  const monthlyPlans = {
-    price1: "$125",
-    price2: "$225",
-    price3: "$325",
-    date: "/Month",
-  };
-
-  const annuallyPlans = {
-    price1: "$325",
-    price2: "$425",
-    price3: "$525",
-    date: "/Annually",
-  };
-
-  const mPlans = [
+  const monthlyPlans = [
     {
-      type: "basic",
-      price: "10",
-      features: ["a", "b"],
+      title: "Basic",
+      price: "$125",
+      date: "/Month",
+      features: [
+        "elit. Unde, quae",
+        "Perspiciatis, deleniti",
+        "elit. Asperiores, laborum",
+        "Perspiciatis, deleniti",
+      ],
+    },
+    {
+      title: "proffesional",
+      price: "$225",
+      date: "/Month",
+      features: [
+        "elit. Unde, quae",
+        "elit. Asperiores, laborum",
+        "Perspiciatis, deleniti",
+      ],
+    },
+    {
+      title: "Custom",
+      price: "$325",
+      date: "/Month",
+      features: [
+        "elit. Unde, quae",
+        "elit. Asperiores, laborum",
+        "Perspiciatis, deleniti",
+        "elit. Asperiores, laborum",
+      ],
     },
   ];
 
-  console.log(monthlyPlans, annuallyPlans);
+  const annuallyPlans = [
+    {
+      title: "Basic",
+      price: "$325",
+      date: "/Annually",
+      features: [
+        "elit. Unde, quae",
+        "elit. Asperiores, laborum",
+        "elit. Unde, quae",
+        "Perspiciatis, deleniti",
+      ],
+    },
+    {
+      title: "proffesional",
+      price: "$425",
+      date: "/Annually",
+      features: [
+        "elit. Unde, quae",
+        "elit. Asperiores, laborum",
+        "Perspiciatis, deleniti",
+      ],
+    },
+    {
+      title: "Custom",
+      price: "$525",
+      date: "/Annually",
+      features: [
+        "elit. Unde, quae",
+        "Perspiciatis, deleniti",
+        "elit. Asperiores, laborum",
+        "Perspiciatis, deleniti",
+      ],
+    },
+  ];
 
   return (
     <div className="container">
